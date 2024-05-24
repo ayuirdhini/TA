@@ -75,11 +75,11 @@ if (!isset($_SESSION['username'])) {
     </a>
             <div class="collapse" id="informasiAlamat" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="../Mahasiswa/daftar_bebasmasalah.php">
+                    <a class="nav-link" href="../Admin/provinsi.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                         Provinsi
                     </a>
-                    <a class="nav-link" href="../Mahasiswa/daftar_ta.php">
+                    <a class="nav-link" href="../Admin/kota.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                         Kota
                     </a>
@@ -105,6 +105,10 @@ if (!isset($_SESSION['username'])) {
                     <a class="nav-link" href="../Admin/pendidikan.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                         Pendidikan
+                    </a>
+                    <a class="nav-link" href="../Admin/jenis_tempat_tinggal.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Jenis Tempat Tinggal
                     </a>
                 </nav>
             </div>
