@@ -83,6 +83,18 @@ if (!isset($_SESSION['username'])) {
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                         Kota
                     </a>
+                    <a class="nav-link" href="../Admin/kecamatan.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Kecamatan
+                    </a>
+                    <a class="nav-link" href="../Admin/kelurahan.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Kelurahan/Desa
+                    </a>
+                    <a class="nav-link" href="../Admin/kode-pos.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Kode Pos
+                    </a>
                 </nav>
             </div>
 
@@ -105,6 +117,14 @@ if (!isset($_SESSION['username'])) {
                     <a class="nav-link" href="../Admin/pendidikan.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                         Pendidikan
+                    </a>
+                    <a class="nav-link" href="../Admin/jenis-pendaftaran.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Jenis Pendaftaran
+                    </a>
+                    <a class="nav-link" href="../Admin/status-kepkel.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
+                        Status Kepala Keluarga
                     </a>
                     <a class="nav-link" href="../Admin/jenis_tempat_tinggal.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>

@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>SIPON: Petugas</title>
-    <link href="../assets/img/Logo Poliban.png" rel="icon" />
+    <link href="../assets/img/.png" rel="icon" />
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="../bootstrap/css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -72,12 +72,12 @@ if (!isset($_SESSION['username'])) {
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="../Mahasiswa/daftar_ta.php">
+                                <a class="nav-link" href="../petugas/calon-santri.php">
                                     <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                                     Data Calon Santri
                                 </a>
 
-                                <a class="nav-link" href="../Mahasiswa/daftar_perpus.php">
+                                <a class="nav-link" href="../petugas/kk-santri.php">
                                     <div class="sb-nav-link-icon"><i class="fas fa-truck-moving"></i></div>
                                     Data Kartu Keluarga
                                 </a>
