@@ -26,11 +26,15 @@ include '../petugas/CRUD-petugas/CRUD-kk-santri.PHP';
                      <th>Nama Calon Santri</th>
                      <th>No Kartu Keluarga</th>
                      <th>Nama Kepala Keluarga</th>
+                     <th>Status Kepala Keluarga</th>
                      <th>Action</th>
                 </thead>
 
                  <?php
-                        $sql = "SELECT * FROM kartu_keluarga";
+                          $sql = "SELECT kartu_keluarga.id_KK, kartu_keluarga.nomor_KK, calon_santri.nama_csantri, kartu_keluarga.nama_kepkel, status_kepala_keluarga.nama_Statuskepkel 
+                          FROM kartu_keluarga
+                          JOIN calon_santri ON kartu_keluarga.id_csantri = calon_santri.id_csantri
+                          JOIN status_kepala_keluarga ON kartu_keluarga.id_statusKK = status_kepala_keluarga.id_statusKK";
                         $result = $koneksi->query($sql);
                         $urut = 1;
 
@@ -38,12 +42,14 @@ include '../petugas/CRUD-petugas/CRUD-kk-santri.PHP';
                         ?>
                             <tr>
                                 <td><?= $urut++ ?></td>
+                                <td><?= $row['nama_csantri'] ?></td>
                                 <td><?= $row['nomor_KK'] ?></td>
                                 <td><?= $row['nama_kepkel'] ?></td>
+                                <td><?= $row['nama_Statuskepkel'] ?></td>
                             </td>
                             <td>
-                                <a href="../petugas/CRUD-petugas/form-edit-kk-santri.php?op=edit&nomor_KK=<?php echo $row['nomor_KK'] ?>"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a>
-                                <a href="kk-santri.php?op=delete&nomor_KK=<?php echo $row['nomor_KK'] ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data?')"> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
+                                <a href="../petugas/CRUD-petugas/form-edit-kk-santri.php?op=edit&id_KK=<?php echo $row['id_KK'] ?>"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a>
+                                <a href="kk-santri.php?op=delete&id_KK=<?php echo $row['id_KK'] ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data?')"> <button class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
 
                             </td>
                         </tr>
